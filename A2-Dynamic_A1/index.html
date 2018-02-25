@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Dynamic Table</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body onload="calcFinalGrades();">
+    <div id="parent">
+      <table id="table"   onkeydown="emptyCell();"onkeyup="calcFinalGrades();"   >
+        <thead class="header" onclick="hiLigthC();">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Assignment 1</th>
+            <th>Final Grade</th>
+          </tr>
+        </thead>
+        <tbody id="tbody" class="body" onclick="hiLigthR();">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div id="child">
+        <btn class="btn" onclick="calcFinalGrades();">Calculate Final Grades</btn>
+        <br>
+        <br>
+        <btn class="adbtn" onclick="insCol();">Add Col</btn>
+        <btn class="adbtn" onclick="insRow();">Add Row</btn>
+  		<br>
+        <br>
+        <btn class="dbtn" onclick="deleteC();">Delete Col</btn>
+  		<btn class="dbtn" onclick="deleteR();">Delete Row</btn>
+  		 <br>
+  		 <br>
+  		 <btn class="ckbtn" onclick="setCookie();">Cookie Save</btn>
+  		 <btn class="ckbtn" onclick="getCookie();">Cookie Load</btn>
+  		<br>
+  		<br>
+  		<btn class="dsbtn" onclick="dselR();">delete selected row</btn>
+  		<btn class="dsbtn" onclick="dselC();">delete selected col</btn>
+  		<br>
+  		<br>
+  		<btn class="btn" onclick="softd();">soft undelete</btn>
+  		 <p class="shh"></p><p class="shh"></p>
+  	  </div>
+    </div>
+  </body>
