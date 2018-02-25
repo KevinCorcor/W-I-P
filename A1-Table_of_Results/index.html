@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>Django Girls blog</title>
+      <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script> 
+  </head>
+  <body onload="calcFinalGrades();">
+    <div id="parent">
+      <table class="table" onkeyup="calcFinalGrades();" onkeydown="emptyCell();">
+        <thead class="header">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Assignment 1</th>
+            <th>Assignment 2</th>
+            <th>Assignment 3</th>
+            <th>Assignment 4</th>
+            <th>Assignment 5</th>
+            <th>Final Grade</th>
+          </tr>
+        </thead>
+        <tbody id="tbody" class="body">
+          <tr>
+            <td>15984762</td>
+            <td>Maurice Moss</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>13265498</td>
+            <td>Roy Trenneman</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>13025687</td>
+            <td>Jen Barber</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15600285</td>
+            <td>Peter File</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16543265</td>
+            <td>Douglas Reynholm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10298374</td>
+            <td>Richmond Avenal</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>14502035</td>
+            <td>Denholm Reynholm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>05147292</td>
+            <td>Fr. Ted Crilly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15898764</td>
+            <td>Fr. Dougal Maguire</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>23458974</td>
+            <td>Fr. Jack Hackett</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div id="child">
+        <btn class="btn" onclick="avgGrade();">Calculate Final Grades</btn>
+        <br>
+        <br>
+        <div class="unSubAsn">Unsubmitted Assignments: <span></span></div>
+        <br>
+        <btn id="gCSV" class="btn" onclick="CSV();">Show CSV</btn>
+        <br>
+        <textarea readonly class="csv"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
