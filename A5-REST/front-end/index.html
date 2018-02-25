@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<title>assignment_5</title>
+		<link rel=stylesheet type="text/css" href="style.css">
+		<meta charset="UTF-8"> 
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+	REST API based off: https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-php/
+		<h1>CREATE</h1>
+		<form id="formC">
+		  name:<br>
+		  <input placeholder="name" id="name" type="text" name="name" value="">
+		  <br>
+		  URL:<br>
+		  <input placeholder="url" id="url" type="text" name="url" value="">
+		  <br>
+		  theDesc:<br>
+		  <input placeholder="Description" id="desc" type="text" name="desc" value="">
+		  <br>
+		  <input id="po" type="submit" value="Submit">
+		</form> 
+
+		<div id="post_results"></div>
+
+
+
+
+		<h1>RETRIEVE</h1>
+		<form id="formR">
+			<select id="select" name="selection">
+				<option>FullTable</option>
+	      <option>ID</option>
+	      <option>name</option>
+	      <option>theDate</option>
+	      <option>URL</option>
+	      <option>theDesc</option>
+		  </select>
+	    <br>
+		  <input placeholder="search(exact)" id="identifier" type="text" name="specific" value="">
+		  <br>
+		  <input id="r" type="submit" value="Submit">
+		</form> 
+
+		<div  type="json" id="get_results"></div>
+
+		<h1>UPDATE</h1>
+		<form id="formU">
+			Where: <select name="col" id="select1">
+				<option>*</option>
+	      <option>ID</option>
+	      <option>name</option>
+	      <option>theDate</option>
+	      <option>URL</option>
+	      <option>theDesc</option>
+		  </select>
+			<input placeholder="match" id="IDup" type="text" name="colval" value="">
+			<br>
+			Change: <select id="selects" name="upcol">
+				<option>name</option>
+	      <option>URL</option>
+	      <option>theDesc</option>
+			</select>
+			<input placeholder="update" id="update" type="text" name="upcolval" value="">
+			<br>
+			<input id="pu" type="submit" value="Submit">
+		</form> 
+
+		<div id="put_results"></div>
+
+		<h1>Deleted</h1>
+		<form id="formD">
+		<select name="select2" id="select2">
+				<option>*</option>
+	      <option>ID</option>
+	      <option>name</option>
+	      <option>theDate</option>
+	      <option>URL</option>
+	      <option>theDesc</option>
+		  </select>
+		<input placeholder="match" id="IDdel" type="text" name="delid" value="">
+			<br>
+			<input id="del" type="submit" value="Submit">
+		</form> 
+
+		<div id="del_results"></div>
+
+	</body>
+</html>
