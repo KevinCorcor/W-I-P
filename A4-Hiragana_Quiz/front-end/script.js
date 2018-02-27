@@ -98,7 +98,7 @@ $(document).ready(function(){
 	//selecting rows
 	$("tbody th").click(function(){
 		console.log($(this).parent().css("background-color").toString());
-		if($(this).siblings("td").css("background-color").toString()=="transparent")
+		if($(this).siblings("td").css("background-color").toString()=="rgba(0, 0, 0, 0)")
 		{
 			$(this).siblings("td").css("background-color","yellow");
 			$(this).siblings("td").attr('type', 'selected');
@@ -110,7 +110,7 @@ $(document).ready(function(){
 	});
 	//selecting every cell
 	$("thead th:first-child").click(function(){
-		if($("td").css("background-color").toString()=="transparent")
+		if($("td").css("background-color").toString()=="rgba(0, 0, 0, 0)")
 		{
 			$("td").css("background-color","yellow");
 			$("td").attr('type', 'selected');
@@ -123,7 +123,7 @@ $(document).ready(function(){
 	//select columns
 	$("thead th:nth-child(n+2)").click(function(){
 		var len = $(this).prevUntil("tbody").length+1;
-		if($("tbody tr > td:nth-child("+len+")").css("background-color")=="transparent"){
+		if($("tbody tr > td:nth-child("+len+")").css("background-color")=="rgba(0, 0, 0, 0)"){
 			$("tbody tr > td:nth-child("+len+")").css("background-color","yellow");
 			$("tbody tr > td:nth-child("+len+")").attr('type', 'selected');
 		}else{
