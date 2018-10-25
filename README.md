@@ -1,2 +1,3 @@
-# Web-Info-Proc
-CS230 -Web Information Processing 
+# W-I-P #
+
+This repository houses several assignments.
